@@ -7,8 +7,10 @@ public class Variable {
     public static void main(String []args)
     {
         String l  = "I am local variable";
+
         Variable iv = new Variable();
         System.out.println(iv.i);
+
         System.out.println(l);
         System.out.println(s);
     }
