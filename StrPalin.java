@@ -23,8 +23,8 @@ public class StrPalin {
             if (yesPalindrome(word))
                 return word;
         }
-
         return null;
+
     }
 
     public static String[] removBrac(String setOfWords)
@@ -45,9 +45,15 @@ public class StrPalin {
 
         String palindrome = getPalin(palWord);
 
-        if(palindrome == null)
+        if
+
+            (palindrome == null)
+
             System.out.println("\"\"");
+
         else
+
             System.out.println(palindrome);
+
     }
 }
