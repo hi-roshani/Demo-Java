@@ -13,7 +13,14 @@ public class Student extends Encap
 
         System.out.println("Enter student roll number: ");
         rollNo = scan.nextInt();
-        enc.setRollNo(rollNo);
+        if (rollNo> 0)
+        {
+            enc.setRollNo(rollNo);
+        }
+        else
+        {
+            System.out.println("!! Roll number cannot be 0 !!");
+        }
 
         System.out.println("Enter student name: ");
         studName = scan.next();
@@ -21,7 +28,13 @@ public class Student extends Encap
 
         System.out.println("Enter student age: ");
         studAge = scan.nextInt();
-        enc.setStudAge(studAge);
+        if(studAge < 100 )
+        {
+            enc.setStudAge(studAge);
+        }
+        else {
+            System.out.println("!! Age cannot be more than 100 !!");
+        }
 
         System.out.println("Enter course name: ");
         course = scan.next();
