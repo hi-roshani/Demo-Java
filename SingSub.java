@@ -1,4 +1,3 @@
-import javax.swing.text.html.parser.Entity;
 import java.util.Scanner;
 
 public class SingSub extends SingBase
@@ -22,6 +21,7 @@ public class SingSub extends SingBase
 
     public static void main(String[] args)
     {
+
         String c = String.valueOf(take());
         System.out.println("Addition is: " + c );
 
