@@ -20,6 +20,7 @@ public class SortSet {
 
         System.out.println("New set: ");
         Iterator<String> i = tree.iterator();
+
         while (i.hasNext())
             System.out.print(i.next()+"  ");
     }
