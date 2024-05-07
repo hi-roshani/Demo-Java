@@ -1,9 +1,10 @@
 import java.util.Iterator;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class LinkedHash {
     public static void main(String args[]){
-        LinkedHashSet<String> lnkHash = new LinkedHashSet<String>();
+        Set<String> lnkHash = new LinkedHashSet<>();
 
         lnkHash.add("Rasgulla");
         lnkHash.add("Jalebi");
