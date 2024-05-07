@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class DeQueFirstLast {
     public static void main(String[] args) {
 
-        Deque<String> flowers = new ArrayDeque<String>();
+        Deque<String> flowers = new ArrayDeque<>();
         flowers.add("Rose");
         flowers.add("Lily");
         flowers.add("Dandelion");
