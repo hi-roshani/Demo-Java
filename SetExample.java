@@ -114,6 +114,8 @@ public class SetExample {
                 treeSet();
             case 3:
                 navigableSet();
+            default:
+                System.out.println("END");
         }
 
 }
