@@ -23,7 +23,6 @@ public class ListExample {
          System.out.println(studentDTO.getRollNo()
                  +"  "+ studentDTO.getStudName()
                  +"  "+ studentDTO.getAddress());
-
      }
 
  }
