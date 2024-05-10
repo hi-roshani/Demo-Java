@@ -1,18 +1,10 @@
 package day13;
 
 public class StudentDTO {
-    private Integer rollNo;
+
     private String name;
     private String course;
     private Float cgpa;
-
-    public void setRollNo(Integer rollNo) {
-        this.rollNo = rollNo;
-    }
-
-    public Integer getRollNo() {
-        return rollNo;
-    }
 
     public void setName(String name) {
         this.name = name;
