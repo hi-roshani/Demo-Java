@@ -8,9 +8,9 @@ import java.util.stream.Stream;
 
 public class MapStudent {
     public Map<Integer, String> studentData(){
+
         List<StudentDTO> studentData = new ArrayList<>();
         Map<Integer, String> roll = new HashMap<>();
-
 
         StudentDTO sDto = new StudentDTO();
         sDto.setName("Vidya"); sDto.setCourse("Python"); sDto.setCgpa(8.1f);
@@ -22,12 +22,10 @@ public class MapStudent {
         studentData.add(sDto);
         roll.put(2, sDto.getCourse());
 
-
         sDto = new StudentDTO();
         sDto.setName("Pratiksha"); sDto.setCourse("Kotlin"); sDto.setCgpa(7.7f);
         studentData.add(sDto);
         roll.put(3, sDto.getCourse());
-
 
         sDto = new StudentDTO();
         sDto.setName("Preeti"); sDto.setCourse("Python"); sDto.setCgpa(8.5f);
@@ -36,7 +34,7 @@ public class MapStudent {
 
 
         Stream<Map.Entry<Integer, String>> stream = roll.entrySet().stream();
-        System.out.println(stream);
+        stream.forEach(System.out::println);
 
         return studentData();
     }
