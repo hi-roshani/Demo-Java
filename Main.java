@@ -5,8 +5,8 @@ public class Main {
     public static void main(String []args){
         MultiThreadEx m1 = new MultiThreadEx();
         MultiThreadEx2 m2 = new MultiThreadEx2();
-        m2.show();
+        m2.start();
 
-        m1.show();
+        m1.start();
     }
 }
