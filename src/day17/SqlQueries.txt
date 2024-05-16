@@ -1,0 +1,39 @@
+show databases;
+
+use student;
+
+select * from class1;
+
+alter table class1 add column lastname varchar(10);
+
+desc class1;
+
+alter table class1 add primary key(roll);
+
+update class1 set lastname="Pawar" where roll=1;
+
+select * from class1 where name= "Priya" and lastname="Pawar";
+
+insert into class1 values(2, "Sarthak", "Joshi");
+
+select * from class1 where name= "Priya" or lastname="Joshi";
+
+select * from class1 where not name= "Sarthak";
+
+select * from class1 where name="Priya" and not lastname="Joshi";
+
+select * from class1 where exists( select * from class1 where name="Priya");
+
+insert into class1 values(3, "Nikhil", "Bhamare");
+
+insert into class1 values(4, "Punam", "Jagtap");
+
+alter table class1 add column city varchar(10);
+
+update class1 set city="Shrirampur" where roll=1;
+
+update class1 set city= "Newasa" where roll=2;
+
+update class1 set city = "Nasik" where roll = 3;
+
+update class1 set city = "Kopargaon" where roll=4;
