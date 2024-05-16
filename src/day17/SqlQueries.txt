@@ -76,3 +76,7 @@ select round(avg(cgpa)) from marks;
 select round(avg(cgpa), 3) from marks;
 
 select count(city) from class1;
+
+select city from class1;
+
+select distinct city from class1;
