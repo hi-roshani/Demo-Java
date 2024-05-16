@@ -64,3 +64,15 @@ insert into class1 values(7, "Manasi", "Mhase", "Sangamner"),(8, "Rutuja", "Pawa
 select * from class1 as class left join marks on class.roll=marks.roll;
 
 select name.name, city.city from class1 as name, class1 as city where name.city= city.city;
+
+select max(marks) from marks;
+
+select min(marks) from marks;
+
+select avg(marks) from marks;
+
+select round(avg(cgpa)) from marks;
+
+select round(avg(cgpa), 3) from marks;
+
+select count(city) from class1;
