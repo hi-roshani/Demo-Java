@@ -37,3 +37,11 @@ update class1 set city= "Newasa" where roll=2;
 update class1 set city = "Nasik" where roll = 3;
 
 update class1 set city = "Kopargaon" where roll=4;
+
+create table marks(roll int, marks float);
+
+insert into marks values(1,78.5),(2, 85.7),(3, 99.9),(4, 89.7);
+
+select * from marks;
+
+select * from class1 as class inner join marks on class.roll= marks.roll;
