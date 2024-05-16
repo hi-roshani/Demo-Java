@@ -45,3 +45,22 @@ insert into marks values(1,78.5),(2, 85.7),(3, 99.9),(4, 89.7);
 select * from marks;
 
 select * from class1 as class inner join marks on class.roll= marks.roll;
+
+alter table marks add column cgpa float;
+
+alter table marks add primary key(roll);
+
+update marks set cgpa = 7.8 where roll=1;
+update marks set cgpa = 8.5 where roll=2;
+update marks set cgpa = 10 where roll=3;
+update marks set cgpa = 8.9 where roll=4;
+
+insert into marks values(5, 56.5, 5.6),(6, 91.1, 9.1);
+
+select * from class1 as class right join marks on class.roll= marks.roll;
+
+insert into class1 values(7, "Manasi", "Mhase", "Sangamner"),(8, "Rutuja", "Pawase", "Sangamner");
+
+select * from class1 as class left join marks on class.roll=marks.roll;
+
+select name.name, city.city from class1 as name, class1 as city where name.city= city.city;
