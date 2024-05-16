@@ -1,0 +1,82 @@
+show databases;
+
+use student;
+
+select * from class1;
+
+alter table class1 add column lastname varchar(10);
+
+desc class1;
+
+alter table class1 add primary key(roll);
+
+update class1 set lastname="Pawar" where roll=1;
+
+select * from class1 where name= "Priya" and lastname="Pawar";
+
+insert into class1 values(2, "Sarthak", "Joshi");
+
+select * from class1 where name= "Priya" or lastname="Joshi";
+
+select * from class1 where not name= "Sarthak";
+
+select * from class1 where name="Priya" and not lastname="Joshi";
+
+select * from class1 where exists( select * from class1 where name="Priya");
+
+insert into class1 values(3, "Nikhil", "Bhamare");
+
+insert into class1 values(4, "Punam", "Jagtap");
+
+alter table class1 add column city varchar(10);
+
+update class1 set city="Shrirampur" where roll=1;
+
+update class1 set city= "Newasa" where roll=2;
+
+update class1 set city = "Nasik" where roll = 3;
+
+update class1 set city = "Kopargaon" where roll=4;
+
+create table marks(roll int, marks float);
+
+insert into marks values(1,78.5),(2, 85.7),(3, 99.9),(4, 89.7);
+
+select * from marks;
+
+select * from class1 as class inner join marks on class.roll= marks.roll;
+
+alter table marks add column cgpa float;
+
+alter table marks add primary key(roll);
+
+update marks set cgpa = 7.8 where roll=1;
+update marks set cgpa = 8.5 where roll=2;
+update marks set cgpa = 10 where roll=3;
+update marks set cgpa = 8.9 where roll=4;
+
+insert into marks values(5, 56.5, 5.6),(6, 91.1, 9.1);
+
+select * from class1 as class right join marks on class.roll= marks.roll;
+
+insert into class1 values(7, "Manasi", "Mhase", "Sangamner"),(8, "Rutuja", "Pawase", "Sangamner");
+
+select * from class1 as class left join marks on class.roll=marks.roll;
+
+select name.name, city.city from class1 as name, class1 as city where name.city= city.city;
+
+select max(marks) from marks;
+
+select min(marks) from marks;
+
+select avg(marks) from marks;
+
+select round(avg(cgpa)) from marks;
+
+select round(avg(cgpa), 3) from marks;
+
+select count(city) from class1;
+
+select city from class1;
+
+select distinct city from class1;
